@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Submission Bookshelf</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_section">
+
+        <h1>Submission Bookshelf</h1>
+      </div>
+    </header>
+    <main>
+      <article class="input_section">
+        <h2>Simpan Buku Baru</h2>
+        <form id="inputBook">
+          <div class="input">
+            <label for="inputBookTitle">Judul</label>
+            <input id="inputBookTitle" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookAuthor">Penulis</label>
+            <input id="inputBookAuthor" type="text" required />
+          </div>
+          <div class="input">
+            <label for="inputBookYear">Tahun</label>
+            <input id="inputBookYear" type="number" required />
+          </div>
+          <div class="input_inline">
+            <label for="inputBookIsComplete">Selesai dibaca</label>
+            <input id="inputBookIsComplete" type="checkbox" checked value="checked" />
+          </div>
+          <button id="bookSubmit" type="submit">Simpan buku di rak <span>Selesai dibaca</span></button>
+        </form>
+      </article>
+
+      <article class="search_section">
+        <h2>Cari Buku</h2>
+        <form id="searchBook">
+          <label for="searchBookTitle">Judul</label>
+          <input id="searchBookTitle" type="text" required />
+          <button id="searchSubmit" type="submit">Cari</button>
+          <button id="searchReset" type="reset">Hapus</button>
+        </form>
+        <div id="answer" class="book_list"></div>
+      </article>
+
+      <article class="book_shelf">
+        <h2>Belum selesai dibaca</h2>
+        <div id="incompleteBookshelfList" class="book_list"></div>
+      </article>
+
+      <article class="book_shelf">
+        <h2>Selesai dibaca</h2>
+        <div id="completeBookshelfList" class="book_list"></div>
+      </article>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+  <footer>
+    <div class="footer_section">
+
+      <p>Copyright © Juli 2023 by Muhamad Syaiful Bahri</p>
+    </div>
+  </footer>
+</html>
