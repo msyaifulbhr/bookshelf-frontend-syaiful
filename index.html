@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <title>Submission Bookshelf</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://kit.fontawesome.com/eecb90e5ca.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -42,8 +43,14 @@
         <form id="searchBook">
           <label for="searchBookTitle">Judul</label>
           <input id="searchBookTitle" type="text" required />
-          <button id="searchSubmit" type="submit">Cari</button>
-          <button id="searchReset" type="reset">Hapus</button>
+          <button id="searchSubmit" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Cari
+          </button>
+          <button id="searchReset" type="reset">
+            <i class="fa-solid fa-trash"></i>
+            Hapus
+          </button>
         </form>
         <div id="answer" class="book_list"></div>
       </article>
